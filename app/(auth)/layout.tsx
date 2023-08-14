@@ -21,7 +21,11 @@ export default function RootLayout({
   return (
     <ClerkProvider localization={frFR}>
       <html lang="fr">
-        <body className={`${inter.className} bg-dark-1`}>{children}</body>
+        <body className={`${inter.className} bg-dark-1`}>
+          <div className="w-full flex justify-center items-center min-h-screen ">
+            {children}
+          </div>
+        </body>
       </html>
     </ClerkProvider>
   );
